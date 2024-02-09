@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>input-value</title>
+</head>
+<body>
+
+<h2>Adınız :</h2>
+<input type="text" name="" id="input" value="Ayşe Çelik">
+<h2 id="mesaj"></h2>
+
+
+    <script>
+
+        //Burada input değerlerini "value ile alırız"
+
+let value=document.querySelector("#input").value;
+document.querySelector("#mesaj").innerHTML=`Merhaba ${value}`;
+
+
+    </script>
+</body>
+</html>

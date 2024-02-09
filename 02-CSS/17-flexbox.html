@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox Yapısı</title>
+    <style>
+
+        .container1{
+
+background-color: pink;
+height: 100px;
+display: flex;/*display:flex yazdıktan sonra alttakiler çalıştı*/
+justify-content: space-evenly;/*center:yatay ortalamak için,space -arround 4 tane yapar,evenly 4ünü de küçültür*/
+align-items: center;/*Dikey ortalamak için,dış elemente verilir*/
+/*flex-direction: column-reverse; dikeyde birleştiriyor,alt alta getiriyor*/
+
+        }
+        .first{
+            align-self: flex-end; /*iç elemente verilir bu özellik.Aşagıya aldı şekli*/
+        }
+
+        .container div{
+          background-color: yellow;  
+          width: 50px;
+          height: 50px;
+        }
+
+        .container2{
+            background-color: pink;
+            height: 100px;
+            margin-top: 30px;
+            display: flex;
+            align-items: center;
+        }
+        .container2 div{
+
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            margin: 0 10px;
+        }
+        .box1{
+            flex:1; /*içteki kutu genişlikleri için bu değerler verildi*/
+        }
+        .box2{
+            flex:3;
+        }
+        .box3{
+            flex:1;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Flexbox</h1>
+
+    <div class="container1">
+        <div class="first">1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+    </div>
+
+
+    <div class="container2">
+        <div class="box1"></div>
+        <div class="box2"></div>
+        <div class="box3"></div>
+    </div>
+</body>
+</html>

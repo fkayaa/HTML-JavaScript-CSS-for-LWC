@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data type conversion</title>
+</head>
+<body>
+    <h2>Data Type Conversions</h2>
+
+    <script>
+
+var para =500;
+para =String(para); //stringe dönüşür
+console.log(typeof(para)); //string
+
+
+let payment=1500; 
+payment=payment.toString(); //string'e dönüşür
+console.log(typeof payment); //string
+
+const money="100"; //string
+console.log(typeof(money)); //string
+
+console.log(money+15); //10015
+console.log(Number(money)+15); //115
+
+
+console.log(Number("abc"));  //Nan
+
+
+
+//boolean-->if ler için bu condition lar çok önemli
+//NaN,Null,0,undefined,false--->false dır
+//space,negatif sayılarda true dur
+
+let puan;
+console.log(puan);
+console.log(Boolean(puan));//false
+
+
+let salary =12300;
+console.log(Boolean(salary));//true
+
+console.log(Boolean("salary"));//true-->yukarıdaki ile alakası yok ama salary olarak ifade edildiği için true
+
+console.log(Boolean("")); //false
+console.log(Boolean(" "));//true -->space deger alır
+
+console.log(Boolean(3-3));//false
+
+console.log(Boolean(Number("elma")));//false
+
+console.log(Boolean(null));//false
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

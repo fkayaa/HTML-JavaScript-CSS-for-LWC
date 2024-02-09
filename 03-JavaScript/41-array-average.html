@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Avg</title>
+</head>
+<body>
+    
+<script>
+
+    let numbers  = [12,56,14,67,89,33,22];
+//ortalamayı hesaplayan fonk
+    function getAvg(arr){
+var sum =0;
+    for(let i=0; i<arr.length;i++){
+
+    sum += arr[i];
+
+    }
+var average =(sum/arr.length).toFixed(2);//toFixed virgülden sonra 2 basamagı al dedik
+return average; //baska yerlerde kullanılacaksa da return deriz
+
+    }
+console.log(getAvg(numbers));
+
+function getCount(arr ,avg){
+
+    var counter =0;
+
+    for(let i=0; i<arr.length; i++){
+
+     if(arr[i]< avg){
+
+        counter++;
+       
+     
+
+     }
+
+    }
+    return counter;
+}
+
+//bir fonksiyonun parametresine başka bir fonksiyon verebiliriz.Bu tür fonksiyonlara callback function denir.
+let x = getCount(numbers,getAvg(numbers)); //ortalama altında kaç tane sayı oldugunu bulduk
+
+console.log(x);
+
+alert(`Arrayin içinde ortalama değer olan ${getAvg(numbers)} degerinin altında ${x} tane eleman vardır.`)
+
+</script>
+
+
+  
+
+
+
+
+
+</body>
+</html>

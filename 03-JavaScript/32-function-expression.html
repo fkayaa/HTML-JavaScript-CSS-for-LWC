@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Expression</title>
+</head>
+<body>
+    <h2>Function Expression</h2>
+
+
+    <script>
+declarationFunc();//function üzerinde cagırılır,calısır,buna hoisting özelliği denir
+
+function declarationFunc(){
+
+    console.log("Bu fonksiyon declarition olarak olusturulmustur.");
+}
+declarationFunc();
+///-----------expression yöntemi--------------////////////
+//expFunc(); --->tanımlandıgı satırın üstünde expression functionlar çalısmaz
+var expFunc = function(){
+
+    console.log("Bu function expression olarak olusturulmustur.")
+}
+expFunc();
+
+    </script>
+</body>
+</html>

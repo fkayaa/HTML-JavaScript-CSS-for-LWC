@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    <h2>Array Methods</h2>
+
+
+
+
+    <script>
+        let numbers  = [12,56,14,67,89,33,22];
+
+        console.log(numbers);
+        //1-"push" arryin sonuna eleman ekler ve yeni eleman sayısını döndürür
+
+        numbers.push(65);
+        console.log(numbers);
+        result = numbers.push(15,105);
+        console.log(result);//10--->push tan dolayı resultın döndürdüğü sayıyı veriyor
+
+        //2-"pop" arrayin son elemanını diziden siler ve silinen elemanı döndürür
+
+        numbers.pop();
+        console.log(numbers);
+        result = numbers.pop();
+       console.log(numbers);
+        console.log(result);//15-->sildiği elemanı döndürür.
+
+        //3-"shift" arrayin ilk elemanını siler ve bu elemanı döndurur
+
+        numbers.shift();//12 silindi
+        console.log(numbers);
+        result=numbers.shift();//56 silindi
+        console.log(numbers); 
+        console.log(result);//56
+
+        //4-"unshift" arrayin ilk indexine eleman ekler ve arrayin yeni eleman sayısını döndurur
+
+        numbers.unshift(250);
+        console.log(numbers);
+        result=numbers.unshift(255,152);
+        console.log(numbers);
+        console.log(result);
+
+        //5-"short" arrayi alfabetik veya aritmetik sıraya göre sıralar
+
+        numbers.sort();//onlar-yüzler basamagına göre sıraladı,o yüzden fonk yaptık
+        console.log(numbers);
+        numbers.sort(function(x,y){
+
+            return x-y;
+        
+        });
+        console.log(numbers);
+
+
+        //6-"reverse" arrayi ters sıralar--listeyi ters cevirir
+
+        numbers.reverse();
+        console.log(numbers);//tersten sıraladı
+
+        //7-"splice" farklı şekilde kullanılabilir
+        //---Belirtilen indexten sonrasını siler
+
+        numbers.splice(6);
+        console.log(numbers);//6.indexten itibaren silindi
+
+        //--Belirtilen indexten itibaren belirtilen sayıda eleman siler.
+
+        numbers.splice(3,1);
+        console.log(numbers);//3.indexi sildi--3.indexten itibaren 1 eleman siler
+
+        //--Belirtilen indexten itibaren siler ve eklemeler de yapabilir.
+
+        numbers.splice(1,1,30,49);
+        console.log(numbers);//1.indexteki eleman silinmiş,yerine 2 eleman eklendi
+
+        numbers.splice(3,0,99);
+        console.log(numbers);//hiç eleman silmeden ,3.indexe eleman eklemiş olduk
+
+        //"includes" bir arrayin belirli bir elemanı içerip içermediğini belirtir.
+       result = numbers.includes(50);
+       console.log(result);//false
+       result =numbers.includes(255);
+       console.log(result);//true
+
+    </script>
+</body>
+</html>

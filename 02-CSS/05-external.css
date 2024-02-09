@@ -1,0 +1,19 @@
+h2{
+    color:aqua;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+}
+p{
+
+    text-align: center;
+    color: bisque;
+    background-color: black;
+}
+
+a{
+    color: blueviolet;
+
+    text-decoration: none;
+}
+/* text-decoration :none dersek alttaki çizgiyi kaldırır */

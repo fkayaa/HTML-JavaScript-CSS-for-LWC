@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>22-Kısa Yol</title>
+</head>
+<body>
+    
+    <h2>Gün Uygulaması</h2>
+    <input type="number" name="" id="inputDay">
+    <button onclick="showDay()">Göster</button>
+    <div></div>
+
+
+
+    <script>
+
+        function showDay(){
+
+       let day = document.querySelector("#inputDay").value;
+       //-->document kısmından value ya kadar Number() parantezine alabiliriz
+       
+       let x;
+       
+       switch(Number(day)){ //-->yukarıda almadım,burda aldım,string geliyor çünkü,number olması lazım,çalışmıyor
+         case 1: 
+         x="Pazartesi";
+         break;
+
+         case 2: 
+        x="Salı";
+         break;
+
+
+         case 3: 
+         x="Çarşamba";
+         break;
+
+
+         case 4: 
+         x="Perşembe";
+         break;
+
+
+         case 5: 
+         x="Cuma";
+         break;
+
+
+         case 6: 
+        x="Cumartesi";
+         break;
+
+         case 7: 
+         x="Pazar";
+         break;
+
+         default: 
+       x="Girilen Sayıda Bir Gün Yoktur";
+         
+
+       }
+
+document.querySelector("div").innerHTML = x;
+        }
+    </script>
+</body>
+</html>

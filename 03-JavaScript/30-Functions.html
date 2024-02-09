@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Functions</title>
+</head>
+<body>
+<input type="number" name="" id="" onchange="yasHesapla5(event)">
+
+<!--event yerine this.value yazıp,functionda da parametre ile karsılayabilirdik-->
+
+
+
+
+   <script>
+
+function yasHesapla1(){
+
+       console.log(`Benim yasım ${2024-1987}`);
+
+}
+
+yasHesapla1();
+////////-------------parametre ile yapalım-------------------//////////////////
+
+function yasHesapla2(dateOfBirth){
+ //aynı ismi verirsek,fonk güncellenir
+ console.log(`Benim yaşım ${2024-dateOfBirth}`);
+
+}
+
+yasHesapla2(1984);
+yasHesapla2(2012);
+
+//////////--------------return kullanılması---------------///////////////////
+
+function yasHesapla3(birhtDate){
+
+
+return `Benim yaşım ${2024-birhtDate}`
+
+
+}
+let x = yasHesapla3(1980);
+console.log(x);
+
+
+/////-----------------date/date-time------------//////////////////
+
+console.log(new Date());
+
+function yasHesapla4(birhtYear){
+
+    let date = new Date(); //Date.Today gibi ---"new Date().getFullYear();"" da yazabilirdik direkt
+    let thisYear = date.getFullYear();
+    console.log(thisYear);
+    return `Benim yaşım ${thisYear-birhtYear}`;
+
+
+}
+
+console.log(yasHesapla4(1958));
+
+////////-----------------inputa doğum yılı girince yas hesaplanacak-----------//////////////////////////
+function yasHesapla5(){
+
+  //let age = document.querySelector("input").value; -->event parametresini kullanırken buna gerek kalmadı
+  //ya da this.value yöntemlerini de kullanabiliriz.
+  let thisYear = new Date().getFullYear();
+
+   document.write(`Yaşınız : ${thisYear-event.target.value}`); //input un içindeki event parametresini alırız
+
+}
+
+
+
+   </script> 
+</body>
+</html>

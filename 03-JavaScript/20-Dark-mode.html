@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark-Mode</title>
+    <style>
+
+.dark{
+
+    background-color: black;
+    color: antiquewhite;
+}
+    </style>
+</head>
+<body>
+    <button onclick="changeMod()" id="btn">Dark Mode</button>
+   
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur sint nulla, in sapiente veniam fugiat sequi ea dicta commodi cupiditate laudantium error blanditiis totam eaque delectus at porro nemo omnis.Dignissimos exercitationem magnam nesciunt placeat deserunt consequuntur laboriosam, vero minus molestiae debitis voluptatibus corporis nulla similique tempore voluptate fugiat obcaecati, reprehenderit laudantium quia ipsa, corrupti eos error! Unde, voluptates eum?</p>
+
+
+    <script>
+
+        var mode = true;
+
+        function changeMod(){
+            if(mode){
+    
+    
+                document.querySelector("body").classList.add("dark");
+                document.querySelector("#btn").innerHTML = "Light Mod";
+                mode=false; //tıklayınca else kısmına girebilsin diye
+    
+            }
+              else{
+                document.querySelector("body").classList.remove("dark");
+                document.querySelector("#btn").innerHTML = "Dark Mod";
+                mode=true; //tıklayınca if e gecsin diye,tekrar döngü olsun diye
+              }
+    
+    
+            }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Number Game</title>
+</head>
+<body>
+    <h2>Find Number Game</h2>
+
+<button onclick="startGame()">Start Game</button>
+
+    <script>
+function startGame(){
+//math.floor()--->asagıya yuvarlar
+//math.ceil()--->yukarıdaki sayıya yuvarlar
+//math.round()---->en yakın olan sayıya yuvarlar
+    let randomNumber = parseInt(Math.random()*100);//Math.floor() içine de alabilirdik,yuvarlardı,100 elde edilemez floor da o yuzden floor parantezinin bittiği yere +1 dememiz gerekir
+
+    console.log(randomNumber);
+
+
+    while(true){
+
+    let num = prompt("Bir Sayı Giriniz");
+
+    if(num>=0 && num<=100){
+
+          if(num>randomNumber){
+            alert("Büyük sayı girdiniz.")
+          }else if(num<randomNumber){
+            alert("Küçük sayı girdiniz")
+          }else if(num=randomNumber){
+            alert("Tebrikler ,doğru tahmin ettiniz!" + "sayı :" + randomNumber);
+            break;
+          }
+
+    }
+    else{
+
+alert("Lütfen 1 ile 100 arasında bir sayı giriniz");
+
+    }
+
+        
+    }
+
+}
+
+
+
+    </script>
+</body>
+</html>

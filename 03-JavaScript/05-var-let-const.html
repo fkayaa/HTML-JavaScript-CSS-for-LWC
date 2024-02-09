@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>var-let-const</title>
+</head>
+<body>
+    <h2>var-let-const</h2>
+    <script>
+
+        //var
+
+
+
+var x;
+
+console.log(x);  //undefined-tanımlanmamıs deger
+var x=5;
+var x=7;
+console.log(x);//var ile tanımlanan değişkenler,tekrar tanımlanabilir.hata vermez.let te hata verir.
+//7
+
+
+var y=20;
+y=30; //var ile yeniden tanımlama yapmadan ,değişkene yeni değer atayabiliyoruz.
+console.log(y); //30
+
+
+//let
+
+
+let z=15;
+z=30; //başına let yazarsak olmaz-hata veriyor.let yazmadan güncelleme yapabildik.
+console.log(z);
+
+
+
+//const
+
+//const k; const ile tanımlanan sabitlere baslangıc degeri vermek zorunludur.bu haliyle hata verir
+
+
+const  k=20;
+//const k=30; / ya da k=30; yapılsa hata verir console da.
+console.log(k);
+
+
+
+if(true){
+
+    var m=50;
+    let n=70;
+    const t=100;
+    console.log(n); //scope içinde okuyor
+    console.log(t); //scope içinde okuyor
+}
+
+console.log(m); //50
+//console.log(n);//okunmuyor--scope dışı oldugu için hata verir
+//console.log(t); //okumuyor --scope dışı oldugu için hata verir
+
+
+//
+
+
+    </script>
+
+</body>
+</html>

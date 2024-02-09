@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+    <h1>Events</h1>
+
+    <h2 onclick="sayHello()"> Merhaba Dünya </h2>
+
+    <input type="number" name="" id="input1" onchange="myFunction(event)"> <!--input degeri degiştiğinde bilgi verir "onchange"-->
+    <input type="number" name="" id="input2" onchange="myFunction(event)">
+<script>
+//-----h2 tag'ine tıkladıgımızda bu function çalısır
+function sayHello(){ //function olusturduk 
+
+    alert("Hello World");
+
+}
+//----> sayHello(); ---> fonk bu şekilde çagırılır
+
+
+//------------input degeri değiştirildiğinde bu function çalısır--------------------------------------
+
+function myFunction(event){
+
+             // alert("New Value : " + document.querySelector("#input1").value); 
+
+             alert("The New Value : " + event.target.value); //--->dinamic yaptık .event--> parametre
+                                                         //target  ---> üzerinde işlem yaptıgım demek
+                                                         //value ---> bu parametrenin üzerinde işlem yapılsın ve "value"'su alınsın
+
+
+
+}
+
+
+
+
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Methods</title>
+</head>
+<body>
+    
+
+    <script>
+        var numbers = [65,7,38,26];
+
+        //for-of loop
+
+        for(let num of numbers){
+
+            console.log(num); //--->console da alt alta geldi
+
+            //document.write(num);--->ekranda bitişik yazıyor,virgülsüz
+        }
+
+        //forEach methodu
+
+        numbers.forEach((num)=>{ //içerisine fonk verebiliyoruz,num parametresi
+
+            console.log(num);
+        });
+
+        //map method--yeni bir array olusturur
+
+      var newArray =  numbers.map((n)=>{
+         
+             return n*2;//verilen sayıların iki katını alır,hafızasında tutar,sonra hepsi arraye dönüşür
+
+        });
+        console.log(newArray);
+
+        //filter methodu filtreleme yaparak,yeni bi array olusturur,true olanları alır
+
+        var newArray = numbers.filter((element)=>{
+
+            return element > 18;
+
+        });
+        console.log(newArray);
+    </script>
+</body>
+</html>

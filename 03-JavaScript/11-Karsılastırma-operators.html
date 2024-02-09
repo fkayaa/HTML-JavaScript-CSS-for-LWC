@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Karsılatırma-operators</title>
+</head>
+<body>
+    <h2>Karsılatırma-operators</h2>
+    <script>
+
+let x=50;
+let y=70;
+let z=100;
+
+
+console.log(x==50); //true
+
+console.log(x==y); //false
+
+console.log(x=="50"); //true-->2 eşittir de sadece degere bakar.true döndürür
+
+console.log(x==="50"); //false--> 3.eşittir type da bakar;type string olunca "false" dur.Tırnak olmadıgında true verir
+
+console.log(x===50); //-->true
+
+console.log(x==50n); //true verdi
+
+console.log(x===50n); //false -->50 nin bigint oldugundan dolayı false verdi
+
+//3 esittir de type na da bakıyor
+//2 esittir de typena bakmıyor,sadece degere bakıyo,esit mi true
+
+console.log(x!=50);//false
+console.log(x !="50");//false
+
+console.log(x !=="50"); //true -->typeları da tutmadıgı için durum sonucu true olur
+
+console.log(x !== 50);//false--> type ları eşittir. yanlış ifade oldugu için sonuc false olur
+
+
+console.log(x<y);//true
+
+console.log(x<=z);//true
+
+console.log(x<"75");//true
+
+console.log(x<"elma");/*NaN oldugu için False dur,karsilastırma yapamadıgı için false dur*/
+
+
+/* === ve !== js ta vardır,type bakar,normalde type da esnektir,ama 3esittir ve 2esitli esit olmayanda type bakar   */
+
+
+
+    </script>
+    
+</body>
+</html>

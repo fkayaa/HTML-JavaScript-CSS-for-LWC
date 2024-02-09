@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Measurement Units</title>
+    <style>
+        /* html{
+            font-size: 50px;
+        } */
+        .box1 {
+            background-color: blue;
+            width:500px;
+            height: 200px;
+        }
+        .box2 {
+            background-color: pink;
+            width: 50%;
+            height:200px;
+        }
+        .box3 {
+            background-color: yellow;
+            width: 70%;
+            height:50%;
+
+        }
+        .box4{
+            background-color: pink;
+            width: 100vw; /*1vw=%1 of viewport demek*/
+            height: 50vh;
+        }
+        .box5{
+            background-color: yellow;
+            width: 50vw;
+            height: 70vh;
+
+        }
+        #div1{
+            font-size: 30px;
+
+        }
+        #div2{
+            font-size: 2em;
+        } 
+        #div3{
+            font-size: 50px;
+        }
+        #div4{
+            font-size: 1rem; /*parenta değil en tepeye bakar.html px line bakar.yani en dıştaki root elemente bakar,bu da html tag'idir.*/
+        }
+    </style>
+</head>
+<body>
+ <h1>Ölçü Birimleri</h1>  
+ <!--px and %--> 
+ <div class="box1"></div>
+ <div class="box2">
+    <div class="box3"></div>
+ </div>
+ <br>
+ <hr>
+ <br>
+ <!--vw and vh-->
+ <div class="box4"></div>
+ <div class="box5"></div>
+
+ <br>
+ <hr>
+ <br>
+ <!--em-->
+ <div id="div1">Lorem, ipsum.
+    <div id="div2">Lorem, ipsum.</div>
+ </div>
+ <br><hr><br>
+ <!--rem-->
+ <div id="div3">Lorem Ipsum
+    <div id="div4">Lorem Ipsum</div>
+ </div>
+
+</body>
+</html>

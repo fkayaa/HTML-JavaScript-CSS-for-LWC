@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>İndirim Uygulaması</title>
+</head>
+<body>
+    <h2>İndirim Uygulaması</h2>
+
+<input type="number" name="" id="price">
+<input type="button" value="Hesapla" onclick="calculate()"><br><br>
+
+<div id="result"> </div>
+
+
+<script>
+function calculate(){
+   var price = document.querySelector("#price").value;
+
+   if(price>=500){
+
+       price =price - price * 0.1; //kısaca price -= price*0.1; diyebiliz
+
+   }
+   else if(price >= 300) {
+    price =price - price * 0.07; // 300 den büyükse %7 ind uygulandı
+
+   }
+   else{
+    price =price - price * 0.05; //diğer durumlar,yani 300 den küçükse %5
+   }
+   document.querySelector("#result").innerHTML = `Son Fiyat : ${price}`; //innerHTML ile div içine atama yaptık
+}
+
+</script>
+
+</body>
+</html>

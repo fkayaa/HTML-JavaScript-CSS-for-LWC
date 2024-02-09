@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary</title>
+</head>
+<body>
+    <h2></h2>
+
+    <input type="number" name="" id="salary">
+
+    <button onclick="calculate()">Hesapla</button>
+    <div id="result"></div>
+
+ <script>
+function calculate(){
+
+ var salary = document.querySelector("#salary").value;
+
+
+ let result = salary >20000 ?  (salary>30000 ? "İyi" : "Normal") : "Az" ; //iç içe ternary 
+ console.log(result);
+ document.querySelector("#result").innerHTML=result;
+}
+ </script>
+
+</body>
+</html>

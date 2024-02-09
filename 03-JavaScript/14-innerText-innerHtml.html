@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InnerText-InnerHtml</title>
+</head>
+<body>
+
+    <h1>Ayşe Çelik</h1>
+
+    <p>
+
+    </p>
+
+
+    <script>
+
+        //innerText ve innerHtml ile bir tag in içindeki degeri alabiliriz.
+        //innerText HTML tag lerini text olarak algılar fakat innerHtml HTML taglerini tanır.
+
+        var isim =document.querySelector("h1").innerHTML
+        console.log(isim);
+
+
+      console.log( document.querySelector("p").innerHTML= "Merhaba " +isim) //p tagini güncelledik
+      
+      document.querySelector("p").innerHTML= `Merhaba ${isim}` //back tik ile de gösterilir
+
+
+    </script>
+    
+</body>
+</html>

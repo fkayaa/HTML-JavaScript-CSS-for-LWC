@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scopes</title>
+</head>
+<body>
+    <h2>Function Global Scope</h2>
+
+
+
+    <script>
+var num =5;//----global scope oluyor bu sekilde
+        function myFunction(){
+            var x =  20;
+            let y =  30;
+            const z =40;
+
+            console.log(x);
+            console.log(y);
+            console.log(z);
+
+            num = 7;
+        }
+       console.log(num);//5---daha fonk çagrılmadıgı için 
+        myFunction();
+        console.log(num); //7---fonk ile çalıstıgı için,var içeride güncellenir
+
+        /* console.log(x); --bunlar fonk içinde tanımlandıgı için,dısarıdan okunmuyor
+        console.log(y); --dısarıda tanımlarız,global scope olur
+        console.log(z); */
+
+        ////------------------------/////
+
+        var num2 = 15; //global scope
+
+        function myFunction2(){
+
+          var num2 = 25; //function scope
+
+          console.log(num2);//25
+
+
+        }
+        console.log(num2);//15
+
+        myFunction2();
+        console.log(num2);15
+
+
+
+    </script>
+</body>
+</html>

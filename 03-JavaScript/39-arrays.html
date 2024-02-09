@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <h2>Arrays</h2>
+
+
+
+
+    <script>
+
+      kurslar = ["JavaScript","HTML","CSS","Bootstrap"];
+
+        console.log(kurslar);
+        console.log(typeof kurslar);
+        console.log(kurslar[1]);//indexi 1 olanı aldık
+        console.log(kurslar[kurslar.length-1]);//son indexini aldık
+        console.log(kurslar.length);//eleman sayısını aldık
+        console.log(kurslar[0].length);//javaScript'in uzunlugunu aldık
+
+        kurslar[0] = "Java";
+        kurslar[1] ="React";
+        kurslar[2] ="Salesforce";
+        console.log(kurslar); //['Java', 'React', 'Salesforce', 'Bootstrap']
+
+        kurslar = ["Phyton","Ruby"];
+        kurslar[2] ="Angular";
+        console.log(kurslar);//['Phyton', 'Ruby', 'Angular'] oldu,default olarak var kabul edilir,bundan dolayı değişime izin verdi
+        //const ile tanımlansaydı değiştirilemezdi
+         // Array inprimitive data'dır. const ile tanımladığımızda doğrudan üzerine yeni değer ataması yapılamaz.
+        // Fakat içindeki değerler değiştirilebilir.
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Division</title>
+    <style>
+        * {
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <input type="number"><br>
+    <input type="number"><br>
+    <button onclick="calculate()">Hesapla</button>
+<h3></h3>
+
+<script>
+
+function calculate(){
+<!--parseInt kullandık çünkü; number hiçliği "0"olarak görür,parseInt ise NaN olarak görür-->
+let num1 = parseInt(document.querySelectorAll("input")[0].value); //indexi 0 olan yani ilk sayıyı alır
+let num2=  parseInt(document.querySelectorAll("input")[1].value);
+
+var counter =0;
+var numbers ="";
+//yer değiştirme algoritması:
+var temp;
+if(num1 > num2){
+    temp=num1;
+    num1=num2;
+    num2=temp;
+}
+
+if(!isNaN(num1) && !isNaN(num2)){ //isNaN : NaN mıdır demek
+    for(let i=num1;i<=num2;i++){
+
+        if(i%7==0){
+  
+        counter++;
+
+        console.log(i); //if'in içine girmişse zaten bölünen i ler vardır burda
+  numbers += i +",";
+  }
+  
+    
+  }
+  document.querySelector("h3").innerHTML=`7 ile bölünen sayısı: ${counter} <br> Bölünen sayılar :  ${numbers.substring(0,numbers.length-1)}`;
+
+
+}
+
+
+else{
+
+    document.querySelector("h3").innerHTML="lütfen sayı giriniz....";
+}
+
+
+}
+
+
+
+</script>
+
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Objects</title>
+</head>
+<body>
+    <h2>JS Objects</h2>
+
+
+
+<script>
+   const car={
+
+     brand:"Mercedes",
+
+     model:"S500",
+
+     color :"Bej",
+
+     gear :"Otomatik",
+
+     NumberOfGear : 8,
+
+   }
+
+   console.log(car);
+   console.log(typeof car);//object
+   console.log(car.color);//bej
+   console.log(typeof car.NumberOfGear);//number
+
+   car.NumberOfGear =7;
+
+   console.log(car.NumberOfGear);//7
+
+   console.log(car["model"]);//S500
+   
+  // car =7;---hata verir ;const oldugu için car değiştirilemez,içindekileri değiştirebiliriz
+
+
+</script>
+
+
+
+</body>
+</html>

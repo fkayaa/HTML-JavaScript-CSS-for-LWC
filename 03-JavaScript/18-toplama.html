@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toplama İşlemi</title>
+    <style>
+        * {
+
+            margin :5px;
+        }
+    </style>
+</head>
+<body>
+    
+<input type="number" name="" id="num1">
+<input type="number" name="" id="num2"> 
+<input type="button" value="Topla" onclick="toplama()"><br><br>
+<div class="result">Sonuç : </div>
+
+<script>
+
+    function toplama(){
+
+        let num1 = document.querySelector("#num1").value;
+        let num2 = document.querySelector("#num2").value;
+        let sum = Number(num1) + Number(num2); //Number demezsek input cinsi number olsa bile string gibi ekleme yapar,toplama yapmaz
+
+        document.querySelector(".result").innerHTML = "Sonuç :" + sum;
+    }
+
+</script>
+
+
+</body>
+</html>

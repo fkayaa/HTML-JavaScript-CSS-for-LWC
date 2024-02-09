@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for loop</title>
+</head>
+<body>
+    <select name="" id="city">
+        <!-- <option>1</option>
+        <option>2</option> -->     <!--82 ye kadar yazdırmak istiyoruz,for loop kullandık o yüzden ,loop dışında da select tag leri arasına ekledik-->
+
+
+    </select>
+
+
+    <script>
+
+        var result;
+
+for(let i=1;i<82;i++){
+     
+     result += `<option> ${i} </option>`;
+
+}
+
+document.querySelector("#city").innerHTML=result;
+
+    </script>
+    
+</body>
+</html>

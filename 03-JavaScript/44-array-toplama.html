@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Toplama</title>
+</head>
+<body>
+    <h2>Array Toplama</h2>
+
+    <button onclick="calculate()">Topla</button>
+
+
+
+    <script>
+      var  numbers1 = [12,56,14,67,89,33,22];
+
+      var numbers2 =  [54,16,41,78,18,35,28];
+
+      var newArray = [];
+
+        function calculate(){
+
+            for(let i=0; i<numbers1.length;i++){
+
+             let sum = numbers1[i] + numbers2[i];
+
+             newArray.push(sum); //apexteki add burda ki push
+
+            }
+
+            document.write(newArray);
+
+
+        }
+
+        console.log(newArray);
+
+    </script>
+</body>
+</html>

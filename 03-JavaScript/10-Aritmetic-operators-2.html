@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aritmetic-Operators</title>
+</head>
+<body>
+    <h2>Aritmetic-Operators</h2>
+
+    <script>
+
+const s1=2024;
+const s2=1980;
+console.log("Yaş:"+(s1-s2)); //44
+console.log("yaş:"+ s1-s2); //NaN
+console.log(`Yaş : ${s1-s2}`);
+
+
+
+/////////////alan-çevre
+
+const pi=3.14;
+let r=5;
+let alan=pi*r**2;
+console.log(alan);//78.5
+
+let cevre=2*pi*r;
+console.log(cevre);//31.40
+
+console.log(alan,cevre);
+
+console.log("Alan:" +alan,"cevre:"+cevre); // virgülle ayırarak yazabiliriz.
+
+////////////
+
+let a=3;
+let b=++a;
+let c=--a;
+console.log(a,b,c);
+a+=5;
+console.log(a);
+
+
+
+const sayı=123;
+
+console.log("Birler Basamağı:" + sayı%10); //mod almadır-->birler basamagı 3
+
+
+
+/*const z=3;
+let k=z++;
+console.log(k); ---> hata verir,const degistirilemez çünkü*/
+
+
+//let x=2 ; y=x++ ; z=x--;
+//console.log(x,y,z); //2 2 3-->artı ya da eksiler sonra geldiği için ;soldan saga dogru oldugu için degeri verir,sonra artar ya da azalır.
+
+
+
+let x=2;
+let y=x++;
+let z=x--;
+console.log(x,y,z); // bu da 2 2 3 tür
+
+
+let w=4;
+let e=++w;
+let t=--w;
+console.log(w,e,t); //4 5 4 -->artı,eksiler önce yazıldıgı için,arttırma-azaltma önceden yapıldı.
+
+
+
+var k=123;
+console.log("10 ile bölümünden kalan:"+k%10);
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>

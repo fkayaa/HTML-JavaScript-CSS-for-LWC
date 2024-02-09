@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Practice</title>
+</head>
+<body>
+    
+
+
+
+    <script>
+
+    let numbers  = [12,56,14,67,89,33,22];
+    largetsNum = numbers[0]; //ilk elemanı en büyük kabul ediyoruz
+    smallestNum = numbers[0];//ilk elemanı en küçük kabul ediyoruz
+    let sum =0;
+    for(let i=0; i<numbers.length; i++){
+
+      if(numbers[i]>largetsNum){
+
+       largetsNum =numbers[i];
+
+      }
+      if(numbers[i]<smallestNum){
+
+       smallestNum =numbers[i];
+
+      }
+
+      sum  +=numbers[i];
+
+    }
+    console.log(smallestNum);
+    console.log(largetsNum);
+    console.log(sum);
+
+
+    </script>
+
+
+
+
+
+
+
+</body>
+</html>

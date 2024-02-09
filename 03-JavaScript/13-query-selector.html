@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM query selector</title>
+</head>
+<body>
+    <h2>DOM</h2>
+
+<nav>
+    <ul>
+        <li id="box1" class="box">Anasayfa</li>
+        <li class="box">Hakkımızda</li>
+        <li class="box">İletişim</li>
+    </ul>
+</nav>
+
+<script>
+
+let nav= document.querySelector("nav");  //nav elementini almış olduk
+console.log(nav);
+
+
+
+let box1=document.querySelector("#box1"); //id si box1 olan geldi
+console.log(box1);
+
+
+let items=document.querySelectorAll(".box"); //classı box olanların hepsi gelir
+console.log(items);
+
+box1.innerText = "Home"; //değiştirilir ,eger eklemek isteseydik;+=Home derdik,yanına eklerdi
+ 
+//box1.innerText="<b>Home</b>"; // bunda görüldüğü gibi yazdı
+box1.innerHTML="<b>Home</b>"; //bunda istenen tip olustu
+
+ items = document.querySelectorAll(".box"); //box classına sahip olanları array olarak getirir
+console.log(items);
+items[1].innerHTML="About"; //güncellenir
+items[2].innerHTML="Contact"; //güncellenir
+
+</script>
+
+
+
+
+
+</body>
+</html>

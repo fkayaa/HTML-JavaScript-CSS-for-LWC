@@ -1,0 +1,26 @@
+nav{
+
+    background-color: gray;
+    text-align: center;
+    width: 200px;
+}
+.active{
+    background-color: black;
+    
+}
+.active a{
+
+    color:white;
+}
+
+a{
+
+    text-decoration: none;
+    color:black
+}
+
+div{
+
+    padding: 15px;
+}
+

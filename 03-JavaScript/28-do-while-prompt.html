@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Do-while Prompt</title>
+</head>
+<body>
+   
+   <button onclick="calculate()">Sayı Girmeye Başlayınız </button> 
+
+
+<script>
+function calculate(){
+
+    var sum=0;
+
+      do{
+      
+       var num = Number(prompt("Sayı Giriniz"));
+
+       sum += num ;
+
+      }
+      while(num != 0)
+
+      document.write("Toplam :" + sum);
+
+}
+
+
+
+</script>
+
+</body>
+</html>

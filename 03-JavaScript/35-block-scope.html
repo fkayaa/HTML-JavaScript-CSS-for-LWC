@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLOCK SCOPE</title>
+</head>
+<body>
+   <H2>BLOCK SCOPE</H2> 
+
+
+   <script>
+    function myFunction(){
+       var x ="Merhaba";
+       let y ="Dünya";
+       const z="Hello";
+
+       if(true){
+
+            var a ="İstanbul";
+            let b= "Ankara";
+            const c="İzmir";
+
+              console.log(a,b,c);//İstanbul,Ankara,İzmir
+
+       }
+
+       console.log(x,y,z);
+       console.log(a);//var blockları tanımadıgı için,block dısından erişilebilir
+       //console.log(b);--->let oldugu için block dısında okuyamadı
+       //console.log(c);---->const oldugundan okuyamaz
+
+
+
+    }
+    myFunction();
+
+    //console.log(x,y,z); ---function içinde tanımlandıgı için hepsi(var,let,const) çıkamaz
+
+
+    
+
+
+   </script>
+
+
+
+
+
+</body>
+</html>

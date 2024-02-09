@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ternary</title>
+</head>
+<body>
+    <h2>Ternary</h2>
+    <input type="radio" name="job" id="retired" onchange="calculate('r')">
+    <label for="retired">Emekli</label><br>
+
+    <input type="radio" name="job" id="working" onchange="calculate('w')">
+    <label for="working">Calisan</label>
+
+    <div id="result"></div>
+
+    <script>
+
+function calculate(workType){
+let salary=40000;
+salary= workType =="r"? salary*0.9:salary;
+document.querySelector("#result").innerHTML=`Maas: ${salary}`;
+}
+
+    </script>
+</body>
+</html>

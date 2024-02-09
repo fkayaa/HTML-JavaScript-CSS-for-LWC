@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors</title>
+    <style>
+      p,span{
+        font-size: 18px;
+      }
+      .renk{
+        background-color: bisque;
+       
+      }
+<!-- .renk diyerek renk classına özel atadık -->
+      p.renk{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      #span-id{
+        color:darkorange
+      }
+
+      .div span a{
+        text-decoration: none;
+      }
+      <!-- .div a desek div in içindeki tüm a ları alır.div span a deyince özellikle onu işaret etmişizdir -->
+
+      <!-- classlar birden fazla tag e verilir,id ler tek bir tag e özeldir -->
+      <!-- id leri tanımlarken # işareti ile,class ise .classAdı diyerek belirtiyoruz -->
+      <!-- p.renk diyerek o classa özel atadık -->
+      <!-- en özelline inersek,ayrıntı vererk,aşagıda bile olsa en özel özellik alınır. -->
+      <!-- eger body içinde inline da verirsek en gecerli o olur -->
+    </style>
+</head>
+<body>
+    <h1 class="renk">Selectors</h1>
+    <a href="">Tıklayınız</a>
+    <p class="renk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum vel odio nulla voluptate ad earum laudantium, nesciunt commodi delectus non culpa aliquid at optio, dolore eos voluptas, eligendi exercitationem alias?</p>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Veniam molestias quas aliquid neque officia a totam iure, illo, vel quod reiciendis velit similique magni ipsam! Officia et quidem magnam reprehenderit?</p>
+
+     <h3 class="renk">Hello World</h3>
+
+    <span id="span-id">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus sint, quam veritatis beatae dolore velit esse necessitatibus nam ab itaque voluptatum aperiam animi eius dolorum quaerat, ratione recusandae. Delectus, excepturi?</span><br><br>
+    <div class="div">
+        <span>
+            <a href="">Tıklayınız Span</a>
+        </span>
+        <p>
+            <a href="">Tıklayınız P</a>
+        </p>
+    </div>
+
+
+</body>
+</html>

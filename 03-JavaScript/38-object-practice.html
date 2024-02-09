@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Not Hesaplama</title>
+</head>
+<body>
+
+    <input type="number" name="" id="vize" placeholder="vize notu giriniz..."><br>
+    <input type="number" name="" id="final" placeholder="final notu giriniz..."><br>
+    <input type="button" value="Hesapla" onclick="calculate()">
+    <div id="result"></div>
+
+    <script>
+        function calculate(){
+            let vize = document.querySelector("#vize").value;
+            let final = document.querySelector("#final").value;
+
+            if(!vize || isNaN(vize) || vize<0 || vize>100){ // hiçlik kontrolünü !vize ile yaptık.
+                alert("Lütfen geçerli bir vize notu giriniz.");
+                return;
+            }
+            if(!final || isNaN(final) || final<0 || final>100){ // hiçlik kontrolünü !final ile yaptık.
+                alert("Lütfen geçerli bir final notu giriniz.");
+                return;
+            }
+
+            let average = vize*0.4 + final*0.6;
+
+            const notlar = {
+                vize_notu: vize,
+                final_notu: final,
+                avg: average
+            }
+
+            document.querySelector("#result").innerHTML =`Vize: ${notlar.vize_notu}, Final: ${notlar.final_notu}, Ortalama: ${notlar.avg}`;
+        }
+    </script>
+    
+</body>
+</html>

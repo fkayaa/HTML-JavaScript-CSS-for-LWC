@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display</title>
+    <style>
+        div{
+            width: 300px;
+            height: 50px;
+            display: inline; /*block element inline olur*/
+        }
+        span{
+            width: 300px;
+            height: 50px;
+            display: inline-block;/*inline element,hem inline hem de block element olarak göründü,hem br özellik göstermez,hem de genişlik-yükseklik gelir*/
+/*inline elementlere widht-height uygulanamaz*/
+        }
+        b{
+            width: 300px;
+            height: 50px;
+            display: block; /*inline element,block element olarak göründü*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Display</h1>
+    <div style="background-color: yellow;">Hello World</div>
+    <span style="background-color: yellowgreen;">Hello World</span>
+    <b style="background-color:bisque">Hello World</b>
+</body>
+</html>
